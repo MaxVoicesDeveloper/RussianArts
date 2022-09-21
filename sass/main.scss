@@ -1,0 +1,134 @@
+@fontface{
+  font-family: 'Comfortaa';
+  src: url('../fonts/Comfortaa/Comfortaa.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa';
+  scroll-behavior: smooth;
+}
+
+html, body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/back.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container{
+  position: relative;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 50%);
+  background-size: 100% cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+.header{
+  width: 100%;
+  padding: 25px 0px 25px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  hr{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    height: 2px;
+    width: 80%;
+    background: white;
+    margin-top: 25px;
+  }
+}
+
+.menu{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  span{
+    color: white;
+    font-size: 30px;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        margin: 0px 25px 0px 25px;
+      }
+    }
+  }
+}
+
+.adress{
+  color: white;
+  text-align: center;
+
+}
+
+
+.welcome{
+  display: flex;
+  width: 100%;
+  height: 13%;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  opacity: 0.9;
+}
+
+.carousel{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+  button{
+    background: none;
+    border: none;
+  }
+  .slider{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    overflow: hidden;
+  }
+  .slider-line{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    left: 0;
+    transition: 500ms;
+    p{
+      min-width: 100%;
+    }
+  }
+}
+
+.anchor{
+  margin-bottom: 20px;
+}

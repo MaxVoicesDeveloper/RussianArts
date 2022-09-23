@@ -1,10 +1,5 @@
-// console.log("Hello my friend");
-
-
-let offset = 0; //Смещение от леовго края
+let offset = 0;
 const sliderLine = document.querySelector('.slider-line');
-
-
 
 document.querySelector('.next').addEventListener('click', function(){
   offset = offset + 100;
